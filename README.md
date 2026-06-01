@@ -1,15 +1,8 @@
-# CSE 151B Competition — Starter Code
+# CSE 151B Competition
 
-Open **`starter_code_cse151b_comp.ipynb`** to get started.
+Open **`cse151b_comp.ipynb`** to get started.
 
-The notebook covers environment setup, inference with Qwen3-4B-Thinking (INT8), and scoring against the public dataset.
+We used a L4 GPU to run our code, and it takes about 6 hours and 30 minutes to run the code.
 
-## Contents
-
-| File | Description |
-|---|---|
-| `starter_code_cse151b_comp.ipynb` | Main entry point |
-| `judger.py` | Response scoring logic |
-| `utils.py` | Utilities used by `judger.py` |
-| `data/public.jsonl` | Public dataset with ground-truth answers |
-| `results/` | Output JSONL files written at runtime |
+To run the full pipeline:
+run_inference(data_path="data/private.jsonl", output_csv="results/results.csv")
